@@ -13,7 +13,13 @@ export default function Nav() {
       <div />
       <ul>
         <li>
-          <Link href="https://github.com/zoeleu" target="_blank" referrerPolicy="no-referrer">github</Link>
+          <Link
+            href="https://github.com/zoeleu"
+            target="_blank"
+            referrerPolicy="no-referrer"
+          >
+            github
+          </Link>
         </li>
         <li>
           <CopyAnchor role="button" href="#" copy="8x13b">
@@ -22,6 +28,11 @@ export default function Nav() {
         </li>
         <li>
           <Link href="/blog">blog</Link>
+        </li>
+        <li>
+          <Link href="/wallpaper">
+            wallpaper
+          </Link>
         </li>
       </ul>
     </nav>
