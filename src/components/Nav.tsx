@@ -10,7 +10,7 @@ export default function Nav() {
       <Link className={styles.header} href="/">
         <h1>zoe's website</h1>
       </Link>
-      <div></div>
+      <div />
       <ul>
         <li>
           <Link href="https://github.com/zoeleu" target="_blank" referrerPolicy="no-referrer">github</Link>
