@@ -17,6 +17,10 @@ $nav-alpha: .5;
   h1 {
     text-align: center;
     height: min-content;
+
+    @media screen and (max-width: 400px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -46,9 +50,12 @@ $nav-alpha: .5;
   align-items: center;
 
   height: 4rem;
+
   width: calc(100vw - 4rem);
 
-
+  @media screen and (max-width: 550px) {
+    height: 8rem;
+  }
 
   background-color: color.change($light-color, $alpha: $nav-alpha);
 
@@ -58,10 +65,16 @@ $nav-alpha: .5;
 
   div {
     flex-grow: 1;
+
+
   }
 
   ul {
     display: flex;
+
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+    }
 
     width: 40%;
     justify-content: right;
@@ -70,6 +83,11 @@ $nav-alpha: .5;
       margin: 1rem;
       text-align: right;
       list-style: none;
+
+      @media screen and (max-width: 550px) {
+        font-size: 18px;
+        margin: .75rem;
+      }
     }
   }
 

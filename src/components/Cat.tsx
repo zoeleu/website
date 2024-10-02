@@ -8,9 +8,9 @@ export default function Cat() {
       <div className={styles.catbox}>
         <div />
         <div>
-
           <div />
           <CatAscii />
+          <div />
         </div>
       </div>
     </>

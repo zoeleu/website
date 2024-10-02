@@ -16,6 +16,10 @@ $ascii-margin: 4rem;
   }
 
   user-select: none;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .catbox {
@@ -40,23 +44,34 @@ $ascii-margin: 4rem;
     display: flex;
     flex-direction: row;
 
-    div {
+    div:nth-child(1) {
       flex-grow: 1;
     }
 
     pre {
       margin: $ascii-margin;
       opacity: 0.5;
+      font-size: 28px;
 
       @media (prefers-color-scheme: dark) {
         opacity: 0.75;
       }
 
+      @media screen and (max-width: 450px) {
+        margin: ($ascii-margin / 2) 0;
+      }
+
       user-select: none;
     }
 
-    pre:nth-of-type(1) {
-      font-size: 28px;
+    div:nth-child(3) {
+      flex-grow: 0;
+      display: none;
+
+      @media screen and (max-width: 450px) {
+        flex-grow: 1;
+        display: flex;
+      }
     }
   }
 }
